@@ -1,0 +1,411 @@
+@font-face {
+  font-family: Nexa-XBold;
+  src: url(fonts/XBold.otf);
+}
+@font-face {
+  font-family: Nexa-Regular;
+  src: url(fonts/Regular.otf);
+}
+@font-face {
+  font-family: Nexa-Book;
+  src: url(fonts/Book.otf);
+}
+@font-face {
+  font-family: Nexa-Heavy;
+  src: url(fonts/Heavy.otf);
+}
+:root {
+  --black: #000;
+  --white: #fff;
+  --label: #ff4459;
+  --yellow: #ffea00;
+  --yBackground: #ffea7b;
+  --radius: 10px;
+  --pButton: 7px 35px;
+  --upper: uppercase;
+  --2rem: 2rem;
+  --regular: Nexa-Regular;
+  --book: Nexa-Book;
+  --xbold: Nexa-XBold;
+  --heavy: Nexa-Heavy;
+}
+section {
+  margin: var(--2rem) 0;
+}
+img {
+  max-width: 100%;
+}
+li {
+  font-family: var(--regular);
+  line-height: 1.5;
+}
+/* Single Course */
+header {
+  display: flex;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0)),
+    url("header.jpg");
+  background-position: top center;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  height: 400px;
+  margin-bottom: 3rem;
+  width: 100vw;
+}
+header > div {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header h1 {
+  color: var(--yellow);
+  text-transform: var(--upper);
+  font-family: var(--xbold);
+}
+.category {
+  color: var(--white);
+  text-transform: var(--upper);
+  font-family: var(--regular);
+}
+.date,
+.time,
+.type {
+  font-family: var(--regular);
+  color: var(--white);
+  line-height: 2;
+}
+header .btn {
+  margin-top: 1rem;
+}
+.subtitle,
+.section_title {
+  font-family: var(--regular);
+  text-transform: var(--upper);
+}
+p,
+.submodules {
+  font-family: var(--book);
+  line-height: 1.2;
+}
+.single_course {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 7rem;
+}
+
+.main-content {
+  width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template: auto / repeat(2, 1fr);
+  gap: var(--2rem);
+}
+.modules {
+  margin-bottom: 3.2rem;
+}
+.submodules {
+  list-style-type: none;
+  counter-reset: css-counter 0;
+  padding-inline-start: 0;
+  margin-bottom: var(--2rem);
+}
+.submodules .module {
+  counter-increment: css-counter 1;
+}
+.submodules .module:before {
+  content: "Módulo " counter(css-counter) ". ";
+  text-transform: none;
+}
+.module {
+  text-transform: var(--upper);
+  line-height: 1.5;
+}
+
+/* Buttons */
+.btn {
+  padding: 7px 20px;
+  text-decoration: none;
+  margin-bottom: var(--2rem);
+  border-radius: var(--radius);
+  font-family: var(--xbold);
+}
+.blk {
+  background: var(--black);
+  color: var(--white);
+}
+.yellow {
+  background: var(--yellow);
+  color: var(--black);
+  max-width: max-content;
+}
+/* Teachers */
+.tab {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.tabcontent h3 {
+  font-family: var(--xbold);
+}
+.tab img {
+  border-radius: 50%;
+}
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.tab button.active img {
+  border: 2px solid var(--black);
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+}
+
+/* Data Sheet */
+.specifications .subtitle {
+  grid-area: subtitle;
+  text-align: center;
+  padding-bottom: 1rem;
+  text-transform: var(--upper);
+}
+.specifications .subtitle,
+.dates,
+.schedule {
+  border-bottom: 4px solid var(--white);
+}
+.specifications span {
+  font-family: var(--xbold);
+}
+sub {
+  font-family: var(--heavy);
+}
+.dates {
+  grid-area: dates;
+}
+.schedule {
+  grid-area: schedule;
+}
+.place {
+  grid-area: place;
+}
+.investment {
+  grid-area: investment;
+}
+.specifications {
+  background: var(--yBackground);
+  padding: 1rem var(--2rem) 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "subtitle subtitle"
+    "dates schedule"
+    "place investment";
+  gap: 1rem;
+  border-radius: 5px;
+}
+.specifications span {
+  font-weight: 700;
+  font-size: 1.3em;
+}
+.specifications p {
+  line-height: 1.5;
+  margin: 0;
+}
+.specifications p:last-child {
+  margin-bottom: var(--2rem);
+}
+.dates i,
+.schedule i,
+.place i,
+.investment i {
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+/* Grid Course */
+.related {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0 var(--2rem);
+}
+.related > div {
+  display: grid;
+  gap: 1rem;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  text-align: start;
+}
+.course_header {
+  position: relative;
+}
+.course p,
+.course h2 {
+  line-height: 1.3;
+  margin: 0;
+}
+.course_header img {
+  border-radius: var(--radius);
+}
+.course_body {
+  margin-top: 10px;
+}
+.course_alliance {
+  background: var(--label);
+  border-radius: var(--radius);
+  padding: var(--pButton);
+  color: var(--white);
+  text-transform: var(--upper);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.course_name {
+  font-family: var(--heavy);
+  font-size: 1.1em;
+}
+.course_description {
+  font-family: var(--book);
+  font-size: 0.9rem;
+}
+.fixed-footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  display: grid;
+  grid-template: auto / repeat(3, 1fr);
+  text-align: center;
+}
+.fixed-footer div {
+  padding: 15px 0;
+  background: var(--yellow);
+  transition-duration: 0.8s;
+}
+.fixed-footer a {
+  text-decoration: none;
+  color: var(--black);
+  font-family: var(--xbold);
+  font-size: 1.2em;
+}
+.fixed-footer div:hover {
+  background: #ecdb1a;
+  transition-duration: 0.8s;
+}
+.web {
+  font-size: 0.9em;
+  font-family: "Nexa-Book";
+}
+/* tablet */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  header {
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  header > div {
+    width: calc(100% - 30px);
+  }
+  .main-content {
+    width: calc(100% - 30px);
+    grid-template: auto / 1fr 50%;
+    padding: 0 15px;
+  }
+  .tab {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .web {
+    display: none;
+  }
+}
+/* mobile */
+@media screen and (max-width: 767px) {
+  section {
+    margin: 1rem 0 0 0;
+  }
+  header {
+    padding: 0 15px;
+    width: calc(100% - 30px);
+    margin-bottom: 1rem;
+  }
+  .single_course {
+    margin-bottom: 5rem;
+  }
+  .main-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+  .module {
+    margin-bottom: 5px;
+  }
+  .submodules {
+    margin-bottom: 2rem;
+  }
+  .teachers {
+    margin: 0;
+  }
+  .tab {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 0;
+  }
+  .specifications {
+    grid-template-areas: "subtitle" "dates" "schedule" "place" "investment";
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .dates i,
+  .schedule i,
+  .place i,
+  .investment i {
+    font-size: 20px;
+  }
+  .specifications p:last-child {
+    margin: 1rem;
+  }
+  .place {
+    border-bottom: 4px solid var(--white);
+  }
+  .disclaimer {
+    margin: 2rem 0 0;
+  }
+  .disclaimer ul {
+    margin: 0 auto;
+    padding-inline-start: 0;
+    max-width: 80%;
+  }
+  .related > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+    text-align: center;
+  }
+  .fixed-footer {
+    display: grid;
+    width: 100vw;
+    justify-content: center;
+    background: var(--yellow);
+  }
+  .fixed-footer div {
+    padding: 10px;
+    border-right: 1px solid #d7c800;
+  }
+  .fixed-footer a {
+    font-size: 1.2em;
+  }
+  .web {
+    display: none;
+  }
+}
