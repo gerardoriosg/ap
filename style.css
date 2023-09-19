@@ -28,6 +28,7 @@
   --book: Nexa-Book;
   --xbold: Nexa-XBold;
   --heavy: Nexa-Heavy;
+  --lightGray: #ededed;
 }
 section {
   margin: var(--2rem) 0;
@@ -524,5 +525,170 @@ sub {
   .footer-container {
     grid-template: auto / 1fr;
     text-align: center;
+  }
+}
+#hero-slider {
+  margin: 0;
+  background: var(--yBackground);
+}
+
+#circle-tabs {
+  background: var(--yBackground);
+  margin: 0;
+  padding: 32px 0 0;
+}
+
+#circle-tabs h3 {
+  margin: 0;
+  text-align: center;
+  font-family: var(--xbold);
+  font-size: 1.75rem;
+}
+
+.tab-content {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.title-stripe {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.title-stripe h4 {
+  font-family: var(--xbold);
+  font-size: 1.25rem;
+}
+
+.title-stripe .stripe {
+  height: 0.33rem;
+  background-color: var(--yellow);
+  flex-grow: 1;
+}
+
+.program-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.program {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  justify-content: center;
+  width: 240px;
+  gap: 4px;
+}
+
+.program img {
+  border-radius: 48px;
+  aspect-ratio: 4 / 3;
+  margin-bottom: 12px;
+}
+
+.program span {
+  font-family: var(--book);
+  margin: 0;
+}
+
+.program p {
+  font-family: var(--xbold);
+  margin: 0;
+}
+
+.program .badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 12px;
+  font-size: 0.8rem;
+  background-color: var(--label);
+  color: white;
+  border-radius: 999px;
+  font-family: var(--xbold);
+}
+
+#highlights {
+  background-color: var(--lightGray);
+  padding: 36px 64px;
+  font-family: var(--xbold);
+  margin: 0;
+}
+
+#highlights h3 {
+  text-align: center;
+  margin-top: 0;
+}
+
+#events {
+  padding: 32px 64px;
+}
+
+#searchbar {
+  background-color: var(--lightGray);
+  padding: 36px 64px;
+  margin: 0;
+}
+
+#tags {
+  background-color: white;
+  padding: 36px 64px;
+  text-align: center;
+  margin: 0;
+}
+
+#tags h3 {
+  font-family: var(--xbold);
+  margin: 0;
+}
+
+.tag-list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.tag-list p {
+  width: 33%;
+  margin: 0;
+  line-height: 2;
+}
+
+@media screen and (max-width: 900px) {
+  .tag-list p {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tag-list p {
+    width: 100%;
+  }
+
+  #circle-tabs h3 {
+    font-size: 1rem;
+  }
+
+  #highlights {
+    padding: 36px 24px;
+  }
+
+  #events {
+    padding: 24px;
+    margin: 0;
   }
 }
