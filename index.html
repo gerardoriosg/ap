@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Component imports-->
+    <link rel="stylesheet" href="components/slider/slider.css" />
+    <link rel="stylesheet" href="components/tabs/tabs.css" />
+    <link rel="stylesheet" href="components/highlights/highlights.css" />
+    <link rel="stylesheet" href="components/events/events.css" />
+    <link rel="stylesheet" href="components/search/search.css" />
+    <link rel="stylesheet" href="components/modal/modal.css" />
+
+    <title>Aprendizaje Permanente</title>
+  </head>
+  <body id="body">
+    <header>
+      <div class="logo">
+        <img
+          src="https://www.udem.edu.mx/themes/custom/udm/svg/general/logo.png"
+        />
+      </div>
+    </header>
+    <section id="hero-slider">
+      <!-- Slider -->
+      <div class="slider">
+        <div class="slides">
+          <ul class="frame">
+            <li
+              class="slide active"
+              style="
+                background-image: url('https://placehold.co/600x200?font=roboto');
+              "
+            ></li>
+            <li
+              class="slide"
+              style="
+                background-image: url('https://placehold.co/900x300?font=roboto');
+              "
+            ></li>
+            <li
+              class="slide"
+              style="
+                background-image: url('https://placehold.co/1200x400?font=roboto');
+              "
+            ></li>
+          </ul>
+        </div>
+        <button class="prev">&#8810;</button>
+        <button class="next">&#8811;</button>
+      </div>
+      <!-- Slider end -->
+    </section>
+    <!-- Tabs -->
+    <section id="circle-tabs">
+      <h3>PROGRAMAS FORMATIVOS PARA TODOS</h3>
+      <div class="tabs-container">
+        <div
+          class="tab-item"
+          id="tab-selector-1"
+          style="
+            background-image: radial-gradient(
+                rgba(0, 0, 0, 0.459),
+                rgba(255, 255, 255, 0)
+              ),
+              url('https://placehold.co/500x500?font=roboto');
+          "
+        >
+          <p>Babies & Toddlers</p>
+        </div>
+        <div
+          class="tab-item"
+          id="tab-selector-2"
+          style="
+            background-image: radial-gradient(
+                rgba(0, 0, 0, 0.459),
+                rgba(255, 255, 255, 0)
+              ),
+              url('https://placehold.co/500x500?font=roboto');
+          "
+        >
+          <p>UDEM Squad</p>
+        </div>
+        <div
+          class="tab-item"
+          id="tab-selector-3"
+          style="
+            background-image: radial-gradient(
+                rgba(0, 0, 0, 0.459),
+                rgba(255, 255, 255, 0)
+              ),
+              url('https://placehold.co/500x500?font=roboto');
+          "
+        >
+          <p>Desarrollo Personal</p>
+        </div>
+        <div
+          class="tab-item"
+          id="tab-selector-4"
+          style="
+            background-image: radial-gradient(
+                rgba(0, 0, 0, 0.459),
+                rgba(255, 255, 255, 0)
+              ),
+              url('https://placehold.co/500x500?font=roboto');
+          "
+        >
+          <p>Desarrollo Profesional</p>
+        </div>
+        <div
+          class="tab-item"
+          id="tab-selector-5"
+          style="
+            background-image: radial-gradient(
+                rgba(0, 0, 0, 0.459),
+                rgba(255, 255, 255, 0)
+              ),
+              url('https://placehold.co/500x500?font=roboto');
+          "
+        >
+          <p>Aprendiendo en Plenitud</p>
+        </div>
+      </div>
+      <div class="tab-indicator-container">
+        <div class="tab-indicator" id="indicator-1">
+          <img src="img/plain-triangle.png" alt="" srcset="" />
+        </div>
+        <div class="tab-indicator" id="indicator-2">
+          <img src="img/plain-triangle.png" alt="" srcset="" />
+        </div>
+        <div class="tab-indicator" id="indicator-3">
+          <img src="img/plain-triangle.png" alt="" srcset="" />
+        </div>
+        <div class="tab-indicator" id="indicator-4">
+          <img src="img/plain-triangle.png" alt="" srcset="" />
+        </div>
+        <div class="tab-indicator" id="indicator-5">
+          <img src="img/plain-triangle.png" alt="" srcset="" />
+        </div>
+      </div>
+      <div class="tab-content" id="tab-1">
+        <div class="title-stripe">
+          <h4>9 PROGRAMAS UDEM SQUAD</h4>
+          <div class="stripe"></div>
+        </div>
+        <div class="program-container">
+          <div class="program">
+            <img src="https://placehold.co/640x480" alt="" />
+            <span>Inicio 26 junio</span>
+            <p>Animación: Cheerleading</p>
+            <span>Adolescentes: 14 a 15 años</span>
+          </div>
+          <div class="program">
+            <img src="https://placehold.co/640x480" alt="" />
+            <span>Inicio 26 junio</span>
+            <p>Animación: Cheerleading</p>
+            <span>Adolescentes: 14 a 15 años</span>
+          </div>
+          <div class="program">
+            <img src="https://placehold.co/640x480" alt="" />
+            <span>Inicio 26 junio</span>
+            <p>Animación: Cheerleading</p>
+            <span>Adolescentes: 14 a 15 años</span>
+          </div>
+          <div class="program">
+            <img src="https://placehold.co/640x480" alt="" />
+            <span>Inicio 26 junio</span>
+            <p>Animación: Cheerleading</p>
+            <span>Adolescentes: 14 a 15 años</span>
+          </div>
+        </div>
+        <div class="title-stripe">
+          <h4>3 PROGRAMAS GAMING LAB</h4>
+          <div class="stripe"></div>
+        </div>
+        <div class="program-container">
+          <div class="program">
+            <img src="https://placehold.co/640x480" alt="" />
+            <span>Inicio 26 junio</span>
+            <p>Animación: Cheerleading</p>
+            <span>Adolescentes: 14 a 15 años</span>
+            <div class="badge">GAMING LAB</div>
+          </div>
+          <div class="program">
+            <img src="https://placehold.co/640x480" alt="" />
+            <span>Inicio 26 junio</span>
+            <p>Animación: Cheerleading</p>
+            <span>Adolescentes: 14 a 15 años</span>
+          </div>
+          <div class="program">
+            <img src="https://placehold.co/640x480" alt="" />
+            <span>Inicio 26 junio</span>
+            <p>Animación: Cheerleading</p>
+            <span>Adolescentes: 14 a 15 años</span>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content" id="tab-2">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
+          placeat recusandae quis eligendi pariatur facere porro tempora ipsum
+          sed nulla, minima tenetur consectetur ad consequatur rem maxime
+          cupiditate iure quaerat?
+        </p>
+      </div>
+      <div class="tab-content" id="tab-3">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
+          placeat recusandae quis eligendi pariatur facere porro tempora ipsum
+          sed nulla, minima tenetur consectetur ad consequatur rem maxime
+          cupiditate iure quaerat?
+        </p>
+      </div>
+      <div class="tab-content" id="tab-4">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
+          placeat recusandae quis eligendi pariatur facere porro tempora ipsum
+          sed nulla, minima tenetur consectetur ad consequatur rem maxime
+          cupiditate iure quaerat?
+        </p>
+      </div>
+      <div class="tab-content" id="tab-5">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
+          placeat recusandae quis eligendi pariatur facere porro tempora ipsum
+          sed nulla, minima tenetur consectetur ad consequatur rem maxime
+          cupiditate iure quaerat?
+        </p>
+      </div>
+    </section>
+    <!-- Tabs end -->
+    <!-- Searchbar -->
+    <section id="searchbar">
+      <div class="searchbar-container">
+        <div class="search">
+          <form action="components/search/search.js">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Busca por nombre"
+            />
+            <button><img src="img/magnifying-glass.png" alt="search" /></button>
+          </form>
+        </div>
+        <div class="filter">
+          <form action="">
+            <select class="dropdown" name="topic" id="topic">
+              <option selected hidden>Tema</option>
+              <option value="opt-1">Opción 1</option>
+              <option value="opt-2">Opción 2</option>
+              <option value="opt-3">Opción 3</option>
+            </select>
+            <select class="dropdown" name="format" id="format">
+              <option selected hidden>Modalidad</option>
+              <option value="opt-1">Opción 1</option>
+              <option value="opt-2">Opción 2</option>
+              <option value="opt-3">Opción 3</option>
+            </select>
+            <select class="dropdown" name="type" id="type">
+              <option selected hidden>Tipo</option>
+              <option value="opt-1">Opción 1</option>
+              <option value="opt-2">Opción 2</option>
+              <option value="opt-3">Opción 3</option>
+            </select>
+            <button>Aplicar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Searchbar end -->
+    <!-- Tags -->
+    <section id="tags">
+      <h3>APRENDE LO QUE PARA TÍ ES RELEVANTE</h3>
+      <div class="tag-list">
+        <p id="tag-1">Administración / Management</p>
+        <p id="tag-2">Ciencias de la salud</p>
+        <p id="tag-3">Crecimiento personal</p>
+        <p id="tag-4">Derecho</p>
+        <p id="tag-5">Diseño, Arquitectura y Artes</p>
+        <p id="tag-6">Educación</p>
+        <p id="tag-7">Empresas Familiares</p>
+        <p id="tag-8">Finanzas</p>
+        <p id="tag-9">Humanidades</p>
+        <p id="tag-10">Idiomas</p>
+        <p id="tag-11">IT y Software</p>
+        <p id="tag-12">Liderazgo y Dirección</p>
+        <p id="tag-13">Marketing y Social Media</p>
+        <p id="tag-14">Negocios / Business</p>
+        <p id="tag-15">Psicología</p>
+        <p id="tag-16">Recursos Humanos</p>
+      </div>
+    </section>
+    <!-- Tags end -->
+    <!-- Highlights -->
+    <section id="highlights">
+      <h3>LOS MÁS BUSCADOS</h3>
+      <div class="highlights-cards">
+        <div
+          id="video-btn-1"
+          class="highlights-video"
+          style="background-image: url('https://placehold.co/600x360')"
+        >
+          <img src="img/play-button-arrowhead.png" alt="" />
+        </div>
+        <div class="highlights-video" id="video-btn-2">
+          <img src="img/play-button-arrowhead.png" alt="" />
+        </div>
+        <div class="highlights-video" id="video-btn-3">
+          <img src="img/play-button-arrowhead.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- Highlights end -->
+    <!-- Events -->
+    <section id="events">
+      <div class="events-container">
+        <div class="events-card">
+          <img src="https://placehold.co/600" alt="" />
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            >Regístrate aquí</a
+          >
+        </div>
+        <div class="schedule">
+          <h3>Próximos eventos</h3>
+          <div class="event-item">
+            <div class="event-date">
+              <h4>15 de junio</h4>
+              <p>Modalidad: Virtual</p>
+            </div>
+            <div class="event-title">
+              <p>Nombre de la conferencia</p>
+              <p>Ponente</p>
+            </div>
+          </div>
+          <div class="event-item">
+            <div class="event-date">
+              <h4>15 de junio</h4>
+              <p>Modalidad: Virtual</p>
+            </div>
+            <div class="event-title">
+              <p>Nombre de la conferencia</p>
+              <p>Ponente</p>
+            </div>
+          </div>
+          <div class="event-item">
+            <div class="event-date">
+              <h4>15 de junio</h4>
+              <p>Modalidad: Virtual</p>
+            </div>
+            <div class="event-title">
+              <p>Nombre de la conferencia</p>
+              <p>Ponente</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Events end -->
+    <!-- Modal Content -->
+    <div class="modal" id="video-1">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <iframe
+          src="https://www.youtube.com/embed/ku4g8NzFVYQ?si=ce2-EpAQnY23FLxD"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div class="modal" id="video-2">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <iframe
+          src="https://www.youtube.com/embed/XEu5ByFGv7g?si=0cZrhIPaLU3m9C3o"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div class="modal" id="video-3">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <iframe
+          src="https://www.youtube.com/embed/eAStu3uk0zI?si=016asGBki_GPiIe4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <!-- Modal Content end -->
+    <footer>
+      <div class="footer-container">
+        <div class="single-footer">
+          <h3>Universidad de Monterrey</h3>
+          <div>
+            <i class="fa-solid fa-phone-volume"></i>
+            <span
+              >Conmutador:
+              <a href="tel:+528182151000">+52 (81) 8215-1000</a></span
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-headset"></i>
+            <span
+              >Admisiones:
+              <a href="tel:+528182151010">+52 (81) 8215-1010</a></span
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Av. Ignacio Morones Prieto 4500 Pte. 66238</span>
+          </div>
+          <div>
+            <i class="fa-solid fa-map"></i>
+            <a
+              href="https://udem.edu.mx/conoce/ubicacion-y-mapas"
+              target="_blank"
+              >Ubicación y mapa</a
+            >
+          </div>
+        </div>
+        <div class="single-footer">
+          <h3>Exprésate</h3>
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+            <a
+              href="https://www.udem.edu.mx/es/institucional/udem-te-escucha"
+              target="_self"
+              >UDEM Te Escucha</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-envelopes-bulk"></i>
+            <a
+              href="/es/institucional/buzon-de-sugerencias"
+              target="_self"
+              data-drupal-link-system-path="node/16606"
+              >Buzón de sugerencias</a
+            >
+          </div>
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+            <a
+              href="/es/contactanos"
+              target="_self"
+              data-drupal-link-system-path="webform/contacto"
+              >Contáctanos</a
+            >
+          </div>
+        </div>
+        <div class="single-footer">
+          <h3>Accesos Directos</h3>
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+            <a
+              href="https://mail.udem.edu.mx/owa/auth/logon.aspx?replaceCurrent=1&amp;url=https%3A//mail.udem.edu.mx/owa/"
+              target="_blank"
+              >Correo UDEM</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-right-to-bracket"></i>
+            <a href="https://portal.udem.edu" target="_blank">Portal UDEM</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-bag-shopping"></i>
+            <a
+              href="https://e-udem.mx/tienda-udem-c-119/?__hstc=170728191.a5f5a307f4c484a7fe556739c86f1fa4.1678125904193.1693318536789.1693328955402.542&amp;__hssc=170728191.15.1693328955402&amp;__hsfp=3953896859"
+              target="_blank"
+              >Tienda UDEM</a
+            >
+          </div>
+        </div>
+        <div class="single-footer">
+          <h3>Únete a nuestra comunidad</h3>
+          <div class="social">
+            <a
+              href="https://www.facebook.com/universidaddemonterrey/"
+              target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://twitter.com/udem" target="_blank"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/genteudem/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.youtube.com/genteudem" target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Component scripts-->
+    <script src="components/slider/slider.js"></script>
+    <script src="components/tabs/tabs.js"></script>
+    <script src="components/modal/modal.js"></script>
+  </body>
+</html>
