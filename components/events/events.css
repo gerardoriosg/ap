@@ -1,0 +1,94 @@
+.events-container {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+    font-family: var(--book);
+}
+
+.events-card {
+    width: calc((100% - 12px) / 3);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.events-card img {
+    width: 100%;
+    height: auto;
+}
+
+.events-card a {
+    text-decoration: none;
+    background-color: var(--yellow);
+    padding: 10px 0;
+    border-radius: 999px;
+    color: black;
+    font-family: var(--xbold);
+    width: 100%;
+    text-align: center;
+}
+
+.schedule {
+    width: calc(((100% - 12px) * 2) / 3);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.schedule h3 {
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    font-family: var(--xbold);
+}
+
+.event-item {
+    display: flex;
+    flex-flow: row;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+}
+
+.event-date {
+    width: 50%;
+    background-color: var(--yellow);
+    text-align: center;
+    margin: 0;
+    padding: 16px;
+}
+
+.event-date h4, .event-date p, .event-title p {
+    margin: 0;
+}
+
+.event-title {
+    width: 50%;
+    background-color: var(--lightGray);
+    margin: 0;
+    padding: 16px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.event-date h4 {
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .events-container {
+        flex-flow: column;
+    }
+
+    .events-card, .schedule {
+        width: 100%;
+    }
+  }

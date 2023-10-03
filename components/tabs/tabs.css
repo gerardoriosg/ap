@@ -1,0 +1,92 @@
+.tabs-container {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+    padding: 24px;
+    overflow-x: scroll;
+}
+
+.tabs-container
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.tabs-container
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.tabs-container
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.tab-item {
+    width: 192px;
+    height: 192px;
+    border-radius: 50%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.tab-indicator-container {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+    display: none;
+    overflow-x: scroll;
+}
+
+.tab-indicator {
+    margin: 0 48px;
+    height: auto;
+}
+
+.tab-indicator img {
+    width: 96px;
+    height: auto;
+    margin-bottom: -12px;
+}
+
+.tab-item p {
+    color: white;
+    padding: 0 16px;
+    font-family: var(--xbold);
+    font-size: 1.25rem;
+}
+
+.tab-content {
+    background-color: white;
+    padding: 32px 56px;
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .tab-item {
+        width: 128px;
+    height: 128px;
+    font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+    .tabs-container {
+        justify-content: start;
+    }
+}
