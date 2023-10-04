@@ -40,10 +40,11 @@ li {
   font-family: var(--regular);
   line-height: 1.5;
 }
-header, footer{
+.header, footer{
   background: #302c26;
+  margin: 0;
 }
-header .logo {
+.header .logo {
   width: 300px;
 }
 footer {
@@ -120,7 +121,7 @@ footer, footer a {
 header .btn {
   margin-top: 1rem;
 }
-.subtitle,
+h2,
 .section_title {
   font-family: var(--regular);
   text-transform: var(--upper);
@@ -152,14 +153,14 @@ p,
   padding-inline-start: 0;
   margin-bottom: var(--2rem);
 }
-.submodules .module {
+.submodules li {
   counter-increment: css-counter 1;
 }
-.submodules .module:before {
+.submodules li:before {
   content: "Módulo " counter(css-counter) ". ";
   text-transform: none;
 }
-.module {
+li {
   text-transform: var(--upper);
   line-height: 1.5;
 }
@@ -211,13 +212,13 @@ p,
 }
 
 /* Data Sheet */
-.specifications .subtitle {
+.specifications h2 {
   grid-area: subtitle;
   text-align: center;
   padding-bottom: 1rem;
   text-transform: var(--upper);
 }
-.specifications .subtitle,
+.specifications h2,
 .dates,
 .schedule {
   border-bottom: 4px solid var(--white);
@@ -407,14 +408,14 @@ sub {
 }
 /* tablet */
 @media screen and (max-width: 1023px) and (min-width: 768px) {
-  header {
+  .header {
     max-width: 100%;
     padding: 0;
   }
-  header .logo {
+  .header .logo {
     padding: 0;
   }
-  header > div {
+  .header > div {
     width: calc(100% - 30px);
     padding: 0 25px;
   }
@@ -442,8 +443,8 @@ sub {
   section {
     margin: 1rem 0 0 0;
   }
-  header .logo {
-    width: 200px;
+  .header .logo {
+    width: 200px ;
   }
   .single_course header > div {
     padding: 0 15px;
